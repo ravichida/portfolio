@@ -1,20 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Experience App</title>
+
+<head>
+  <title>Experience App</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <style>
-    .div{
-      padding:15px;
+    body {
+      margin: 1rem !important;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: black;
+      text-align: left;
+      background-color: #fff;
+    }
+
+    .div {
+      padding: 15px;
+    }
+
+    .masthead-avatar {
+      margin-bottom: 1rem;
+    }
+
+    .name {
+      text-align: center;
+    }
+
+    nav .mb-5 {
+      margin-bottom: 0 !important;
+    }
+
+    nav {
+      background-color: #1b7e3c !important;
+      border-radius: 5px;
+    }
+
+    .navbar-nav {
+      margin: 0 15px;
+    }
+
+    .nav-item {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .nav-item .nav-link,
+    .nav-item .nav-link:active,
+    .nav-item .nav-link:hover {
+      color: white;
+    }
+
+    .portfolio-item {
+      cursor: pointer;
+      position: relative;
+      display: block;
+      max-width: 25rem;
+      margin-bottom: 40px;
+      border-radius: .5rem;
+      overflow: hidden;
+    }
+
+    .portfolio-item img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .title {
+      margin-top: 20px;
+    }
+
+    .image {
+      clear: both;
+      max-width: 450px;
+      margin: 20px;
+      text-align: center;
+
+    }
+
+    .modal-dialog {
+      max-width: 50%;
+      margin: 1.75rem auto;
+      padding: 10px;
+    }
+
+    .image img {
+      max-width: 100%;
+    }
+
+    .navbar-toggler {
+      background-color: white;
+      line-height: 0.25rem !important;
+    }
+
+    .navbar-toggler-icon {
+      border: 2px solid black;
+      margin: 5px;
+      height: 0;
+    }
+
+    .modal-body img {
+      max-width: 100%;
+    }
+
+    @media screen and (min-width: 576px) and (max-width: 1024px) {
+      .image {
+        max-width: 100% !important;
+      }
     }
   </style>
-  </head>
-  
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div class="container" id="root"></div>
-  </body>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div className="container-fluid" id="root"></div>
+</body>
+
 </html>

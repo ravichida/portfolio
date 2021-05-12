@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Experience App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            margin: 1rem !important;
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: black;
+            text-align: left;
+            background-color: #fff;
+        }
+
+        .div {
+            padding: 15px;
+        }
+
+        .masthead-avatar {
+            margin-bottom: 1rem;
+        }
+
+        .name {
+            text-align: center;
+        }
+
+        nav .mb-5 {
+            margin-bottom: 0 !important;
+        }
+
+        nav {
+            background-color: #1b7e3c !important;
+            border-radius: 5px;
+        }
+
+        .navbar-nav {
+            margin: 0 15px;
+        }
+
+        .nav-item {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .nav-item .nav-link,
+        .nav-item .nav-link:active,
+        .nav-item .nav-link:hover {
+            color: white;
+        }
+
+        .portfolio-item {
+            cursor: pointer;
+            position: relative;
+            display: block;
+            max-width: 25rem;
+            margin-bottom: 40px;
+            border-radius: .5rem;
+            overflow: hidden;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .title {
+            margin-top: 20px;
+        }
+
+        .image {
+            clear: both;
+            max-width: 450px;
+            margin: 20px;
+            text-align: center;
+
+        }
+
+        .modal-dialog {
+            max-width: 50%;
+            margin: 1.75rem auto;
+            padding: 10px;
+        }
+
+        .image img {
+            max-width: 100%;
+        }
+
+        .navbar-toggler {
+            background-color: white;
+            line-height: 0.25rem !important;
+        }
+
+        .navbar-toggler-icon {
+            border: 2px solid black;
+            margin: 5px;
+            height: 0;
+        }
+
+        .modal-body img {
+            max-width: 100%;
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 1024px) {
+            .image {
+                max-width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div className="container-fluid" id="root">
+        <nav class="navbar navbar-expand-sm"><img class="masthead-avatar mb-5 rounded-circle" width="60" height="60"
+                src="./images/logo.jpeg" alt=""><button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar"><span class="navbar-toggler-icon clearfix"></span><br
+                    class="clearfix"><span class="navbar-toggler-icon clearfix"></span><br class="clearfix"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#Portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#About me">About me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contact me">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-*-* mx-auto"><img class="masthead-avatar mb-5 rounded-circle" width="200"
+                    src="./images/RaviChida.jpg" alt=""><br>
+                <div class="name">Ravi Kumar Chida</div>
+            </div>
+            <div class="col-*-* mx-auto align-middle"><br><br>
+                <h3><a href="images/projects.pdf" alt="Download Portfolio"> Download Portfolio</a></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 class="title" id="Portfolio">Portfolio</h4>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap">
+            <div class="image align-content-center"><img class="" src="./images/portfolio/projects_page-0051.jpg" alt=""
+                    data-toggle="modal" data-target="#portfolioModal"></div>
+            <div class="image align-content-center"><img class="" src="./images/portfolio/projects_page-0052.jpg" alt=""
+                    data-toggle="modal" data-target="#portfolioModal"></div>
+            <div class="image align-content-center"><img class="" src="./images/portfolio/projects_page-0071.jpg" alt=""
+                    data-toggle="modal" data-target="#portfolioModal"></div>
+            <div class="image align-content-center"><img class="" src="./images/portfolio/projects_page-0037.jpg" alt=""
+                    data-toggle="modal" data-target="#portfolioModal"></div>
+            <div class="image align-content-center"><img class="" src="./images/portfolio/projects_page-0001.jpg" alt=""
+                    data-toggle="modal" data-target="#portfolioModal"></div>
+            <div class="image align-content-center"><img class="" src="./images/portfolio/projects_page-0015.jpg" alt=""
+                    data-toggle="modal" data-target="#portfolioModal"></div>
+        </div>
+        <div className='row'>
+            <div className='col-sm-12'>
+                <h3 className='title' id="About me">About me</h3>
+            </div>
+        </div>
+        <div className='row'>
+            <div className='col-sm-12'>
+                <h4 className='title'>Technical Skills</h4>
+                <ul>
+                    <li>Web & Mobile Development – Using HTML5, CSS3, JavaScript, jQuery, React (reactjs).</li>
+                    <li>Front-end frameworks for developing responsive, mobile-first websites – Bootstrap and CSS, SASS.
+                    </li>
+                    <li>Responsive UI Development which supports Multi Device and Cross Browser Compatibility.</li>
+                    <li>Well versed in ( HTML5 / CSS / SASS / JavaScript ) programming concepts.</li>
+                    <li>Unit testing thoroughly and check whether the functionality working properly or not, testing
+                        with mock data / SIT & UAT.</li>
+                    <li>Fixing runtime errors if any</li>
+                    <li>Fixing the Bugs raised by testing team, debugging and resolving the issues on priority.</li>
+                    <li>Communicating with other teams / clients and providing status.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 class="title" id="Experience">Experience</h4>
+                <table class="table table-striped olistTable">
+                    <tbody>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Designation</th>
+                            <th>Tenure</th>
+                        </tr>
+                        <tr>
+                            <td class="">Freelancer</td>
+                            <td class="">Sr. UI Developer</td>
+                            <td class="">May 2017 to Till Date</td>
+                        </tr>
+                        <tr>
+                            <td class="">Techmojo Pvt Ltd.</td>
+                            <td class="">Sr. UI Developer</td>
+                            <td class="">Sept 2016 to April 2017</td>
+                        </tr>
+                        <tr>
+                            <td class="">Helius Computech Pvt Ltd.</td>
+                            <td class="">Sr. Front End Engineer</td>
+                            <td class="">Mar 2015 to April 2016</td>
+                        </tr>
+                        <tr>
+                            <td class="">Oxygen Networks Pvt. Ltd.</td>
+                            <td class="">Sr. UI Engineer</td>
+                            <td class="">May 2014 to Dec 2014</td>
+                        </tr>
+                        <tr>
+                            <td class="">IVY Comptech Pvt. Ltd.</td>
+                            <td class="">Sr. UI Design, Developer</td>
+                            <td class="">Dec 2007 to April 2014</td>
+                        </tr>
+                        <tr>
+                            <td class="">Oxygen Networks Pvt. Ltd.</td>
+                            <td class="">UI Developer</td>
+                            <td class="">Dec 2004 to Nov 2007</td>
+                        </tr>
+                        <tr>
+                            <td class="">Indiainfo.com</td>
+                            <td class="">Sr. Web Designer</td>
+                            <td class="">Feb 2000 to Nov 2004</td>
+                        </tr>
+                        <tr>
+                            <td class="">Hyderabad.com (CITI-NET)</td>
+                            <td class="">Web Designer</td>
+                            <td class="">Sept 1998 to Jan 2000</td>
+                        </tr>
+                        <tr>
+                            <td class="">Miracle Media</td>
+                            <td class="">Technical Consultant</td>
+                            <td class="">Jan 1997 to Sept 1998</td>
+                        </tr>
+                        <tr>
+                            <td class="">Prime Computers</td>
+                            <td class="">Auto CAD Team Leader</td>
+                            <td class="">July 1995 to Dec 1996</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h4 class="title" id="Contact me">Contact me</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>email: ravi.chanti@gmail.com<br>Ravi Kumar Chida, Flat No 402, Raghavendra Nilayam,<br>Plot No: 212A,
+                    Street No 10,<br>Addagutta, Western Hills, Kukatpally<br>HYDERABAD, TELANGANA 500085</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-center" id="Portfolio">©2021 RaviChida.in. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
