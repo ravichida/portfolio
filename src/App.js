@@ -1,5 +1,6 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 
 class app extends React.Component {
   constructor(props) {
@@ -133,6 +134,7 @@ class app extends React.Component {
             <ul className="navbar-nav">
               {this.state.nav.map((item, index) =>
                 <li className="nav-item" key={index}>
+                  {/* <a className="nav-link" onClick={(event) => this.removeClass(event)} href={'#' + item}>{item}</a> */}
                   <AnchorLink className="nav-link" onClick={(event) => this.removeClass(event)} href={'#' + item}>{item}</AnchorLink>
                   {/* <a className="nav-link" onClick={(event) => this.removeClass(event)} href={'#' + item}>{item}</a> */}
                 </li>
@@ -155,7 +157,7 @@ class app extends React.Component {
             <h4 className='title' id="Portfolio">Portfolio</h4>
           </div>
         </div>
-        <div className='d-flex flex-wrap' id="Portfolio">
+        <div className='d-flex flex-wrap'>
           {
             this.state.img
               .map((img, index) =>
